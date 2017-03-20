@@ -191,75 +191,205 @@ section input[type='radio']
 section label
 {
     position: relative;
-    width: 40px;
+    width: 20px;
     height: 40px;
     background: url('src/img/cat_emotions.png');
-    margin: 1px;
     display: inline-block;
 }
 
-section input[id*='kind-1']:checked ~ label[for*='kind-1'],
-section input[id*='kind']:checked ~ label[for*='kind-1']:hover
+section label:not([for*='_5'])
+{
+    position: relative;
+    width: 20px;
+    height: 40px;
+    background: -20px 0 url('src/img/cat_emotions.png');
+    display: inline-block;
+}
+
+section input[id*='kind-0_5']:checked ~ label[for*='kind-0_5'],
+section input[id$='kind-1']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind']:checked ~ label[for*='kind-0_5']:hover
 {
     background: -48px 0 url('src/img/cat_emotions.png') no-repeat;
 }
 
-section input[id*='kind-2']:checked ~ label[for*='kind-1'],
-section input[id*='kind-2']:checked ~ label[for*='kind-2'],
-section input[id*='kind']:checked ~ label[for*='kind-2']:hover
+section input[id$='kind-1']:checked ~ label[for$='kind-1'],
+section input[id*='kind']:checked ~ label[for$='kind-1']:hover
+{
+    background: -68px 0 url('src/img/cat_emotions.png') no-repeat;
+}
+
+section input[id*='kind-1_5']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind-1_5']:checked ~ label[for*='kind-1_5'],
+section input[id*='kind']:checked ~ label[for*='kind-1_5']:hover
 {
     background: 135px 40px url('src/img/cat_emotions.png');
 }
 
-section input[id*='kind-3']:checked ~ label[for*='kind-1'],
-section input[id*='kind-3']:checked ~ label[for*='kind-2'],
-section input[id*='kind-3']:checked ~ label[for*='kind-3'],
-section input[id*='kind']:checked ~ label[for*='kind-3']:hover
+section input[id*='kind-1_5']:checked ~ label[for$='kind-1']
 {
-    background: 88px 40px url('src/img/cat_emotions.png');
+    background: 115px 40px url('src/img/cat_emotions.png');
 }
 
-section input[id*='kind-4']:checked ~ label[for*='kind-1'],
-section input[id*='kind-4']:checked ~ label[for*='kind-2'],
-section input[id*='kind-4']:checked ~ label[for*='kind-3'],
-section input[id*='kind-4']:checked ~ label[for*='kind-4'],
-section input[id*='kind']:checked ~ label[for*='kind-4']:hover
-{
-    background: 39px 0 url('src/img/cat_emotions.png');
-}
-
-section input[id*='kind-5']:checked ~ label[for*='kind-1'],
-section input[id*='kind-5']:checked ~ label[for*='kind-2'],
-section input[id*='kind-5']:checked ~ label[for*='kind-3'],
-section input[id*='kind-5']:checked ~ label[for*='kind-4'],
-section input[id*='kind-5']:checked ~ label[for*='kind-5']
-{
-    background: 39px 40px url('src/img/cat_emotions.png');
-}
-
-section label[for*='kind-1']:hover
-{
-    background: -48px 0 url('src/img/cat_emotions.png');
-}
-
-section label[for*='kind-2']:hover
+section input[id$='kind-2']:checked ~ label[for*='kind-0_5'],
+section input[id$='kind-2']:checked ~ label[for*='kind-1_5']
 {
     background: 135px 40px url('src/img/cat_emotions.png');
 }
 
-section label[for*='kind-3']:hover
+section input[id$='kind-2']:checked ~ label[for$='kind-1'],
+section input[id$='kind-2']:checked ~ label[for$='kind-2'],
+section input[id*='kind']:checked ~ label[for$='kind-2']:hover
+{
+    background: 115px 40px url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-2_5']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind-2_5']:checked ~ label[for*='kind-1_5'],
+section input[id*='kind-2_5']:checked ~ label[for*='kind-2_5'],
+section input[id*='kind']:checked ~ label[for*='kind-2_5']:hover
+{
+    background: 86px 40px url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-2_5']:checked ~ label[for$='kind-1'],
+section input[id*='kind-2_5']:checked ~ label[for$='kind-2']
+{
+    background: 66px 40px url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-3']:checked ~ label[for$='kind-1'],
+section input[id*='kind-3']:checked ~ label[for$='kind-2'],
+section input[id*='kind-3']:checked ~ label[for$='kind-3'],
+section input[id*='kind']:checked ~ label[for$='kind-3']:hover
+{
+    background: 68px 40px url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-3']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind-3']:checked ~ label[for*='kind-1_5'],
+section input[id*='kind-3']:checked ~ label[for*='kind-2_5']
 {
     background: 88px 40px url('src/img/cat_emotions.png');
 }
 
-section label[for*='kind-4']:hover
+section input[id*='kind-3_5']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind-3_5']:checked ~ label[for*='kind-1_5'],
+section input[id*='kind-3_5']:checked ~ label[for*='kind-2_5'],
+section input[id*='kind-3_5']:checked ~ label[for*='kind-3_5'],
+section input[id*='kind']:checked ~ label[for*='kind-3_5']:hover
 {
     background: 39px 0 url('src/img/cat_emotions.png');
 }
 
-section label[for*='kind-5']:hover
+section input[id*='kind-3_5']:checked ~ label[for$='kind-1'],
+section input[id*='kind-3_5']:checked ~ label[for$='kind-2'],
+section input[id*='kind-3_5']:checked ~ label[for$='kind-3']
+{
+    background: 19px 0 url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-4']:checked ~ label[for$='kind-1'],
+section input[id*='kind-4']:checked ~ label[for$='kind-2'],
+section input[id*='kind-4']:checked ~ label[for$='kind-3'],
+section input[id*='kind-4']:checked ~ label[for$='kind-4'],
+section input[id*='kind']:checked ~ label[for$='kind-4']:hover
+{
+    background: 19px 0 url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-4']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind-4']:checked ~ label[for*='kind-1_5'],
+section input[id*='kind-4']:checked ~ label[for*='kind-2_5'],
+section input[id*='kind-4']:checked ~ label[for*='kind-3_5']
+{
+    background: 39px 0 url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-4_5']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind-4_5']:checked ~ label[for*='kind-1_5'],
+section input[id*='kind-4_5']:checked ~ label[for*='kind-2_5'],
+section input[id*='kind-4_5']:checked ~ label[for*='kind-3_5'],
+section input[id*='kind-4_5']:checked ~ label[for*='kind-4_5'],
+section input[id*='kind']:checked ~ label[for*='kind-4_5']:hover
 {
     background: 39px 40px url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-4_5']:checked ~ label[for$='kind-1'],
+section input[id*='kind-4_5']:checked ~ label[for$='kind-2'],
+section input[id*='kind-4_5']:checked ~ label[for$='kind-3'],
+section input[id*='kind-4_5']:checked ~ label[for$='kind-4']
+{
+    background: 19px 40px url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-5']:checked ~ label[for$='kind-1'],
+section input[id*='kind-5']:checked ~ label[for$='kind-2'],
+section input[id*='kind-5']:checked ~ label[for$='kind-3'],
+section input[id*='kind-5']:checked ~ label[for$='kind-4'],
+section input[id*='kind-5']:checked ~ label[for$='kind-5']
+{
+    background: 19px 40px url('src/img/cat_emotions.png');
+}
+
+section input[id*='kind-5']:checked ~ label[for*='kind-0_5'],
+section input[id*='kind-5']:checked ~ label[for*='kind-1_5'],
+section input[id*='kind-5']:checked ~ label[for*='kind-2_5'],
+section input[id*='kind-5']:checked ~ label[for*='kind-3_5'],
+section input[id*='kind-5']:checked ~ label[for*='kind-4_5']
+{
+    background: 39px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for*='kind-0_5']:hover
+{
+    background: -48px 0 url('src/img/cat_emotions.png') no-repeat;
+}
+
+section label[for$='kind-1']:hover
+{
+    background: -68px 0 url('src/img/cat_emotions.png');
+}
+
+section label[for*='kind-1_5']:hover
+{
+    background: 135px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-2']:hover
+{
+    background: 115px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for*='kind-2_5']:hover
+{
+    background: 86px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-3']:hover
+{
+    background: 106px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-3_5']:hover
+{
+    background: 40px 0 url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-4']:hover
+{
+    background: 20px 0 url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-4_5']:hover
+{
+    background: 38px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-5']:hover
+{
+    background: 19px 40px url('src/img/cat_emotions.png');
 }
 
 section label[div*='kind']
@@ -269,71 +399,233 @@ section label[div*='kind']
 
 section label[for*='kind']:hover ~ div[class*='kind']
 {
-    width: 40px;
+    width: 20px;
     height: 40px;
     display: inline-block;
     position: absolute;
 }
 
-section label[for*='kind-5']:hover ~ div[class*='kind']
+section label[for$='kind-5']:hover ~ div[class*='kind']
+{
+    background: 19px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-5']:hover ~ div[class*='_5']
 {
     background: 39px 40px url('src/img/cat_emotions.png');
 }
 
-section label[for*='kind-4']:hover ~ div[class*='kind'],
-section label[for*='kind-4']:hover
+section label[for$='kind-4_5']:hover ~ div[class*='kind']
+{
+    background: 19px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-4_5']:hover ~ div[class$='_5']
+{
+    background: 39px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-4']:hover ~ div[class*='kind']
+{
+    background: 20px 0 url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-4']:hover ~ div[class*='_5']
 {
     background: 39px 0 url('src/img/cat_emotions.png');
 }
 
-section label[for*='kind-3']:hover ~ div[class*='kind'],
-section label[for*='kind-3']:hover
+section label[for$='kind-3_5']:hover ~ div[class*='kind']
 {
-    background: 88px 40px url('src/img/cat_emotions.png');
+    background: 20px 0 url('src/img/cat_emotions.png');
 }
 
-section label[for*='kind-2']:hover ~ div[class*='kind']
+section label[for$='kind-3_5']:hover ~ div[class*='_5']
+{
+    background: 40px 0 url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-3']:hover ~ div[class*='kind'],
+section label[for$='kind-3']:hover
+{
+    background: 67px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-3']:hover ~ div[class*='_5']
+{
+    background: 87px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-2_5']:hover ~ div[class*='kind']
+{
+    background: 67px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-2_5']:hover ~ div[class*='_5'],
+section label[for$='kind-2_5']:hover
+{
+    background: 87px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-2']:hover ~ div[class*='kind'],
+section label[for$='kind-2']:hover
+{
+    background: 115px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-2']:hover ~ div[class*='_5']
 {
     background: 135px 40px url('src/img/cat_emotions.png');
 }
 
-section label[for*='kind-5']:hover ~ div[class='kind-1'],
-section label[for*='kind-4']:hover ~ div[class='kind-1'],
-section label[for*='kind-3']:hover ~ div[class='kind-1'],
-section label[for*='kind-2']:hover ~ div[class='kind-1']
+section label[for$='kind-1_5']:hover ~ div[class*='kind']
+{
+    background: 115px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-1_5']:hover ~ div[class*='_5'],
+section label[for$='kind-1_5']:hover
+{
+    background: 135px 40px url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-1']:hover ~ div[class*='kind'],
+section label[for$='kind-1']:hover
+{
+    background: -68px 0 url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-1']:hover ~ div[class*='_5']
+{
+    background: -48px 0 url('src/img/cat_emotions.png');
+}
+
+section label[for$='kind-5']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-4']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-3']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-2']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-0_5'],
+section label[for$='kind-1']:hover ~ div[class='kind-0_5']
 {
     left: 0;
 }
 
-section label[for*='kind-5']:hover ~ div[class='kind-2'],
-section label[for*='kind-4']:hover ~ div[class='kind-2'],
-section label[for*='kind-3']:hover ~ div[class='kind-2']
+section label[for$='kind-5']:hover ~ div[class='kind-1'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-1'],
+section label[for$='kind-4']:hover ~ div[class='kind-1'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-1'],
+section label[for$='kind-3']:hover ~ div[class='kind-1'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-1'],
+section label[for$='kind-2']:hover ~ div[class='kind-1'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-1']
 {
-    left: 42px;
+    left: 20px;
 }
 
-section label[for*='kind-5']:hover ~ div[class='kind-3'],
-section label[for*='kind-4']:hover ~ div[class='kind-3']
+section label[for$='kind-5']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-4']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-3']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-2']:hover ~ div[class='kind-1_5']
 {
-    left: 84px;
+    left: 40px;
 }
 
-section label[for*='kind-5']:hover ~ div[class='kind-4']
+section label[for$='kind-5']:hover ~ div[class='kind-2'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-2'],
+section label[for$='kind-4']:hover ~ div[class='kind-2'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-2'],
+section label[for$='kind-3']:hover ~ div[class='kind-2'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-2']
 {
-    left: 126px;
+    left: 60px;
 }
 
-section label[for*='kind-4']:hover ~ div[class='kind-4'],
-section label[for*='kind-3']:hover ~ div[class='kind-4'],
-section label[for*='kind-3']:hover ~ div[class='kind-4'],
-section label[for*='kind-3']:hover ~ div[class='kind-3'],
-section label[for*='kind-2']:hover ~ div[class='kind-2'],
-section label[for*='kind-2']:hover ~ div[class='kind-3'],
-section label[for*='kind-2']:hover ~ div[class='kind-4'],
-section label[for*='kind-1']:hover ~ div[class='kind-1'],
-section label[for*='kind-1']:hover ~ div[class='kind-2'],
-section label[for*='kind-1']:hover ~ div[class='kind-3'],
-section label[for*='kind-1']:hover ~ div[class='kind-4']
+section label[for$='kind-5']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-4']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-3']:hover ~ div[class='kind-2_5']
+{
+    left: 80px;
+}
+
+section label[for$='kind-5']:hover ~ div[class='kind-3'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-3'],
+section label[for$='kind-4']:hover ~ div[class='kind-3'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-3']
+{
+    left: 100px;
+}
+
+section label[for$='kind-5']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-4']:hover ~ div[class='kind-3_5']
+{
+    left: 120px;
+}
+
+section label[for$='kind-5']:hover ~ div[class='kind-4'],
+section label[for$='kind-4_5']:hover ~ div[class='kind-4']
+{
+    left: 140px;
+}
+
+section label[for$='kind-5']:hover ~ div[class='kind-4_5']
+{
+    left: 160px;
+}
+
+section label[for$='kind-4_5']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-4']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-4']:hover ~ div[class='kind-4'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-4'],
+section label[for$='kind-3_5']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-3']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-3']:hover ~ div[class='kind-4'],
+section label[for$='kind-3']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-3']:hover ~ div[class='kind-3'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-4'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-3'],
+section label[for$='kind-2_5']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-2']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-2']:hover ~ div[class='kind-4'],
+section label[for$='kind-2']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-2']:hover ~ div[class='kind-3'],
+section label[for$='kind-2']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-2']:hover ~ div[class='kind-2'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-4'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-3'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-2'],
+section label[for$='kind-1_5']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-1']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-1']:hover ~ div[class='kind-4'],
+section label[for$='kind-1']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-1']:hover ~ div[class='kind-3'],
+section label[for$='kind-1']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-1']:hover ~ div[class='kind-2'],
+section label[for$='kind-1']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-1']:hover ~ div[class='kind-1'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-4_5'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-4'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-3_5'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-3'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-2_5'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-2'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-1_5'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-1'],
+section label[for$='kind-0_5']:hover ~ div[class='kind-0_5']
 {
     display: none;
 }
